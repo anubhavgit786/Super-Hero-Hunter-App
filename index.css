@@ -1,0 +1,379 @@
+header
+{
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.bg-body-tertiary 
+{
+    background-color: #CF1928;
+}
+
+.navbar .nav-link 
+{
+    color: #FFF;
+    font-size: 30px;
+}
+
+.navbar .nav-link.active
+{
+    color: #f6e58d;
+    font-size: 30px;
+}
+
+.input-group:focus-within 
+{
+    background-color: #fff;
+    outline: 1px solid rgba(246, 229, 141, 0.5);
+    border: 1px solid rgba(246, 229, 141, 0.5);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(246, 229, 141, 0.5);  
+    z-index: 3;
+    border-radius: .25rem;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none !important;
+    outline: 1px solid rgba(246, 229, 141, 0.5);
+    border: 1px solid rgba(246, 229, 141, 0.5);
+}
+
+.input-group-text
+{
+    background-color: rgba(246, 229, 141, 0.5);
+}
+
+.navbar .navbar-toggler
+{
+    outline: none;
+    border: none;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon 
+{
+    background-image: url('./images/hamburger.png');
+    font-size: 2rem;;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active
+{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 0.25rem rgba(246, 229, 141, 0.5);  
+}
+
+@media (max-width: 991.98px) 
+{
+    .navbar-brand 
+    {
+        position: fixed !important;
+        left: 50%;
+        top: -3%;
+        transform: translate(-50%, 3%);
+    }
+    .navbar-nav 
+    {
+      text-align: center; /* Center-align the items */
+      margin-top: 10px; /* Add spacing from the top */
+    }
+  
+    .navbar-nav .nav-item 
+    {
+      display: inline-block; /* Display the items inline */
+    }
+
+    .navbar .navbar-toggler 
+    {
+        float: right;
+    }
+}
+  
+.heros
+{
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* custom.css */
+.carousel
+{
+    cursor: pointer;
+}
+
+.w-100 
+{
+    width: 100% !important;
+    height: 70vh;
+}
+
+.carousel-inner img 
+{
+    border-radius: 10px; /* Initial border radius value */
+    transition: border-radius 0.5s ease-in-out; /* Transition for smooth change */
+    opacity: 0.5;
+}
+
+.carousel-inner .active img 
+{
+    border-radius: 10px; /* Border radius value during slide transition */
+}
+
+.carousel-indicators [data-bs-target] 
+{
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #CF1928;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 5px solid #CF1928;
+    border-bottom: 5px solid #CF1928;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active
+{
+    opacity: 1;
+}
+
+.carousel-caption h2, .carousel-caption p
+{
+    color: #CF1928;
+}
+
+@media (max-width: 991.98px) 
+{
+    .w-100 
+    {
+        width: 100% !important;
+        height: 50vh;
+    }
+
+    .carousel-item
+    {
+        border-radius: 10px;
+    }
+    .carousel-inner img 
+    {
+        object-fit: contain;
+        border-radius: 10px;
+        height: 100%;
+    }
+}
+
+.staticContent
+{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.staticContent .card img
+{
+    height: 100%;
+    object-fit: cover;
+}
+
+#searchResults
+{
+    width: 80%;
+    margin: 20px auto;
+}
+
+#searchResults .card
+{
+    max-width: 350px;
+    width: 100%;
+}
+
+.heroInfo .card-description
+{
+    overflow: hidden;
+}
+
+#searchResults .img-fluid
+{
+    height: 100%;
+}
+
+#searchResults h5
+{
+    text-align: center;
+}
+
+#searchResults .card-btns
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+#searchResults .card-btns button
+{
+    margin: 20px 0;
+}
+
+#searchResults .card-btns button:first-child
+{
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchResults .fa-heart
+{
+    color: #fff;
+}
+
+#searchResults .fa-arrow-up-right-from-square
+{
+    color: #6c757d;
+}
+
+#searchResults .fa-circle-check, .heroInfo .fa-circle-check
+{
+    margin-right: 10px;
+}
+
+
+
+@media (max-width: 770px) 
+{
+    #searchResults .card
+    {
+        max-width: 300px;
+    }
+
+    #searchResults .col-md-4
+    {
+        height: 200px;
+    }
+
+    #searchResults .img-fluid
+    {
+        width: 100%;
+        border-radius: 0.25rem;
+    }
+
+    #searchResults .card-btns
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;   
+    }
+
+    #searchResults .card-btns button
+    {
+        margin: 0;
+    }
+}
+
+.heroName
+{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+}
+
+.heroInfo
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+}
+
+.heroInfo .card
+{
+    width: 450px;
+}
+
+.heroInfo .card-img
+{
+    opacity: 0.2;
+    height: 450px;
+    width: 100%;
+}
+
+.heroInfo .card-img-overlay
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.heroInfo .card-info
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.heroInfo .card-img-overlay button
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 770px) 
+{
+    .heroName
+    {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -40%);
+    }
+
+    .heroInfo
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 150px;
+    }
+
+    .heroInfo .card
+    {
+        width: 300px;
+    }
+
+    .heroInfo .card-img
+    {
+        opacity: 0.2;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; /* Set the color of the scrollbar thumb on hover */
+}
+
+

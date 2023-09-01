@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superheros Hunter</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Superheros Hunter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Favorites</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for Superheros...."
+              aria-label="SuperHeros" aria-describedby="basic-addon1" onclick="scrollToSection('#searchResults')" />
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"
+                style="color: #ffffff"></i></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section class="heros">
+    <h2 class="display-5 text-center">Marvel Super Heroines</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+          aria-label="Slide 10"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://d2eib6r9tuf5y8.cloudfront.net/l/assets/img/article/article-4016-msufvzuo/keyvisual.jpg"
+            class="d-block w-100" alt="wonder woman" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Wonder Woman</h2>
+            <p>
+              Wonder Woman is an Amazon, a race of female warriors in Greek
+              mythology. For the purpose of the Wonder Woman character, it was
+              the Greek gods who gave her her powers. These powers include
+              superhuman strength and speed as well as the ability to fly.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.thedirect.com/media/article_big/scarlet-witch-hot-toy.jpg" class="d-block w-100"
+            alt="scarlet witch" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Scarlet Witch</h2>
+            <p>
+              The Scarlet Witch believed she used the ability to affect
+              probabilities for a positive benefit to herself, though at times
+              to imprecise outcomes. Later, she mastered the ability and began
+              to understand it as a literal altering of reality.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://staticg.sportskeeda.com/editor/2022/11/a907d-16677733796115-1920.jpg" class="d-block w-100"
+            alt="captain marvel" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Captain Marvel</h2>
+            <p>
+              Former Air Force pilot and intelligence agent Carol Danvers
+              pursued her dream of space exploration as a NASA employee, but
+              her life forever changed when she was accidentally transformed
+              into a human-Kree hybrid with extraordinary powers.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.cnet.com/a/img/resize/0bd75bd0b939519f059539633b9508c54a8d67bc/hub/2020/06/03/a6160509-d386-42ed-a1f9-72a1ccd895f2/twitter-in-stream-wide-batwomanlighter.jpg?auto=webp&fit=crop&height=675&width=1200"
+            class="d-block w-100" alt="batwoman" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Batwoman</h2>
+            <p>Batwoman seeks justice for Gotham City.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://helios-i.mashable.com/imagery/articles/07HBruT0TkczgeHhpIGaMfe/hero-image.fill.size_1248x702.v1623368442.jpg"
+            class="d-block w-100" alt="black widow" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Black Widow</h2>
+            <p>
+              Black Widow assassin Melina Vostokoff work as Russian undercover
+              agent, posing as a family in Ohio with Natasha Romanoff and
+              Yelena Belova as her daughters. She steals S.H.I.E.L.D.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://static1.srcdn.com/wordpress/wp-content/uploads/2022/03/fantastic-four-rise-of-the-silver-surfer-jessica-alba-susan.jpg"
+            class="d-block w-100" alt="Invisible Woman" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Invisible Woman</h2>
+            <p>
+              Invisible Woman uses her powers of invisibility to protect Earth
+              and acts as the leading maternal figure of the Fantastic Four.
+              Susan Storm Richards overcame losing her parents at a young age
+              to become a motherly figure to her brother.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/113/151/725/jennifer-lawrence-x-men-days-of-future-past-wallpaper-preview.jpg"
+            class="d-block w-100" alt="mystique" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Mystique</h2>
+            <p>
+              Mystique is a shapeshifter who can mimic the appearance and
+              voice of any person with exquisite precision. Her natural
+              appearance includes blue skin, red hair and yellow eyes.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/4/781/319/anne-hathaway-catwoman-batman-the-dark-knight-rises-selina-kyle-wallpaper-preview.jpg"
+            class="d-block w-100" alt="catwoman" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Catwoman</h2>
+            <p>
+              A shy woman, endowed with the speed, reflexes, and senses of a
+              cat, walks a thin line between criminal and hero, even as a
+              detective doggedly pursues her, fascinated by both of her
+              personas.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://d.newsweek.com/en/full/2072484/thor-love-thunder.jpg" class="d-block w-100" alt="jane" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Jane Foster</h2>
+            <p>
+              Jane Foster is one of the most brilliant astrophysicists on
+              Earth. On a trip to New Asgard, visiting the broken pieces of
+              Mjolnir, Jane Foster's life is forever changed when the
+              shattered Mjolnir mysteriously transforms her into The Mighty
+              Thor.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/article/vKtg85tYOPbDehqthtSrf93i4ahwfd.jpg"
+            class="d-block w-100" alt="jean" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Jean Grey</h2>
+            <p>
+              She is a caring, nurturing figure, but she also has to deal with
+              being an Omega-level mutant and the physical manifestation of
+              the cosmic Phoenix Force. Jean experienced a transformation into
+              the Phoenix in the X-Men storyline "The Dark Phoenix Saga".
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left fa-2xl" style="color: #cf1928" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right fa-2xl" style="color: #cf1928" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="staticContent">
+    <h2 class="display-5 text-center mt-5 mb-5">Marvel Super Heroes</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://images.immediate.co.uk/production/volatile/sites/3/2022/12/MCDBAVVEC017-d4ece24.jpg"
+            class="card-img-top" alt="superman" />
+          <div class="card-body">
+            <h5 class="card-title">Superman</h5>
+            <p class="card-text">
+              Born on Krypton as Kal-El and raised on Earth, he is a being of
+              immense power, strength, flight and invulnerability who, after
+              realizing his destiny to serve mankind, uses his powers to
+              protect and save others.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="https://i.guim.co.uk/img/media/892fa5c71f29ce088247397726f32ca83b8231d0/79_0_3386_2031/master/3386.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=b087998b9e2006c0826f07750230af84"
+            class="card-img-top" alt="spiderman" />
+          <div class="card-body">
+            <h5 class="card-title">Spiderman</h5>
+            <p class="card-text">
+              "Spider-Man" centers on student Peter Parker (Tobey Maguire)
+              who, after being bitten by a genetically-altered spider, gains
+              superhuman strength and the spider-like ability to cling to any
+              surface. He vows to use his abilities to fight crime, coming to
+              understand the words of his beloved Uncle Ben: "With great power
+              comes great responsibility."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://media.philstar.com/photos/2022/06/28/christian-bale-batman_2022-06-28_17-47-49.jpg"
+            class="card-img-top" alt="batman" />
+          <div class="card-body">
+            <h5 class="card-title">Batman</h5>
+            <p class="card-text">
+              Batman ventures into Gotham City's underworld when a sadistic
+              killer leaves behind a trail of cryptic clues. As the evidence
+              begins to lead closer to home and the scale of the perpetrator's
+              plans become clear, he must forge new relationships, unmask the
+              culprit and bring justice to the abuse of power and corruption
+              that has long plagued the metropolis
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://deadline.com/wp-content/uploads/2022/09/MCDXMEN_FE105.jpg" class="card-img-top"
+            alt="wolveriene" />
+          <div class="card-body">
+            <h5 class="card-title">Wolverine</h5>
+            <p class="card-text">
+              James's mutant abilities were triggered when his father was shot
+              by the Howlett groundskeeper Thomas Logan, whom he did not know
+              was his real father. James killed Logan, slashed the face of
+              Logan's son and his friend Dog, and left Alberta with a
+              childhood friend, Rose O'Hara.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/originals/ae/16/16/ae16166346f26681ff4349f909aec9ec.jpg" class="card-img-top"
+            alt="reed" />
+          <div class="card-body">
+            <h5 class="card-title">Reed Richards</h5>
+            <p class="card-text">
+              Reed Richards gained the power of elasticity from irradiation by
+              cosmic rays. He has the ability to convert his entire body into
+              a highly malleable state at will, allowing him to stretch,
+              deform, and reform himself into virtually any shape.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="https://geekositymag.com/wp-content/uploads/2022/06/Chris-Evans-Wants-To-Flame-On-As-The-MCUs-Human-Torch-02.jpg"
+            class="card-img-top" alt="torch" />
+          <div class="card-body">
+            <h5 class="card-title">Human Torch</h5>
+            <p class="card-text">
+              Jonathan "Johnny" Storm a.k.a. the Human Torch is an American
+              superpowered adventurer. He was a high school student before he
+              was exposed to high levels of cosmic radiation when his older
+              sister Sue Storm's boyfriend, scientist Dr. Reed Richards, took
+              them and pilot Ben Grimm into space in the stolen rocket
+              Marvel-1.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://img.tamindir.com/resize/1200x675/2023/05/476726/iron-man-15-yildonumu-ozel-video.jpg"
+            class="card-img-top" alt="Iron Man" />
+          <div class="card-body">
+            <h5 class="card-title">Iron Man</h5>
+            <p class="card-text">
+              A billionaire industrialist and genius inventor, Tony Stark
+              (Robert Downey Jr.), is conducting weapons tests overseas, but
+              terrorists kidnap him to force him to build a devastating
+              weapon. Instead, he builds an armored suit and upends his
+              captors. Returning to America, Stark refines the suit and uses
+              it to combat crime and terrorism.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://writinguntilragnarokhome.files.wordpress.com/2020/11/thor-ragnarok-review.jpg"
+            class="card-img-top" alt="thor" />
+          <div class="card-body">
+            <h5 class="card-title">Thor</h5>
+            <p class="card-text">
+              Thor is exiled by his father, Odin, the King of Asgard, to the
+              Earth to live among mortals. When he lands on Earth, his trusted
+              weapon Mjolnir is discovered and captured by S.H.I.E.L.D.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTg3NjMxNzQ4M15BMl5BanBnXkFtZTcwOTUwOTA2NQ@@._V1_.jpg"
+            class="card-img-top" alt="professor x" />
+          <div class="card-body">
+            <h5 class="card-title">Professor X</h5>
+            <p class="card-text">
+              Charles Xavier is a mutant gifted with vast telepathic powers, a
+              specialist in mutant biology and sociology and the founder of
+              the Uncanny X-Men as Professor X. With immense support from Dr.
+              Moira MacTaggert, his life has become dedicated to fulfilling
+              his dream of mutants and humans coexisting peacefully.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="https://img.mensxp.com/media/content/2022/Jun/Chris-Evans-Misses-Captain-America-Role1200_62ab0d310f9bb.jpeg"
+            class="card-img-top" alt="captain america" />
+          <div class="card-body">
+            <h5 class="card-title">Captain America</h5>
+            <p class="card-text">
+              During World War II, Steve Rogers decides to volunteer in an
+              experiment that transforms his weak body. He must now battle a
+              secret Nazi organisation headed by Johann Schmidt to defend his
+              nation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://wearecinemaniax.files.wordpress.com/2013/11/xmenmagneto.jpg" class="card-img-top"
+            alt="erik lehnsherr" />
+          <div class="card-body">
+            <h5 class="card-title">Erik Lehnsherr</h5>
+            <p class="card-text">
+              Erik Lehnsherr, aka Magneto, is a multifaceted character with a
+              rich backstory, making him one of the most compelling villains.
+              His ability to manipulate magnetic fields and his distinctive
+              red helmet and cape make him instantly recognizable
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://cdn.mos.cms.futurecdn.net/939FtmjxRriMmRpjPqaoqD.jpeg" class="card-img-top"
+            alt="ben grimm" />
+          <div class="card-body">
+            <h5 class="card-title">Ben Grimm</h5>
+            <p class="card-text">
+              Born on Yancy Street in New York City's Lower East Side, to a
+              Jewish family, Benjamin Jacob "Ben" Grimm has an early life of
+              poverty and hardship, shaping him into a tough, streetwise
+              scrapper. His older brother Daniel, whom Ben idolizes, is killed
+              in a street gang fight when Ben is eight years old.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="searchResults">
+    <h2 class="display-5 text-center mt-5 mb-5">Search Results</h2>
+    <div id="searchContents"
+      class="d-flex flex-wrap justify-content-center justify-content-md-center justify-content-lg-between justify-content-xl-between justify-content-xxl-between">
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"
+    integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var myCarousel = new bootstrap.Carousel(
+        document.getElementById("carouselExampleCaptions"),
+        {
+          interval: 3000,
+          pause: "hover",
+          wrap: true,
+        }
+      );
+
+      // Add listener for slide transition
+      myCarousel._element.addEventListener(
+        "slide.bs.carousel",
+        function (event) {
+          var activeItem = event.relatedTarget;
+          var allItems = Array.from(
+            myCarousel._element.querySelectorAll(".carousel-item")
+          );
+
+          // Remove 'active' class from all items
+          allItems.forEach((item) => item.classList.remove("active"));
+
+          // Add 'active' class to the currently sliding item
+          activeItem.classList.add("active");
+        }
+      );
+    });
+
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
